@@ -11,7 +11,7 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("topic/test")
 
 def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload))
+    print(msg.topic+" "+str("hello world"))
 
 url = 'http://example.com/api'
 data = {'key1': 'value1', 'key2': 'value2'}
